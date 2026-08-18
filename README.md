@@ -152,8 +152,8 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 ./main
 
-Note: Boost is fetched automatically via CMake's FetchContent. Internet access is required during configuration.
 
+Build Options
 # Enable ThreadSanitizer
 cmake .. -DCMAKE_CXX_FLAGS="-fsanitize=thread -g -O1"
 
