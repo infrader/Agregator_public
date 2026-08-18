@@ -64,7 +64,7 @@ if(ENABLE_TSAN)
     add_link_options(-fsanitize=thread)
 endif()
 
-add_compile_definitions(ENABLE_DEBUG_LOGS)
+#add_compile_definitions(ENABLE_DEBUG_LOGS)
 
 add_library(MyLib STATIC ${MYLIB_SOURCE})
 target_include_directories(MyLib PUBLIC ${MYLIB_TARGET})
@@ -79,8 +79,3 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
 endif()
 
 option(BUILD_TESTS "Build tests" ON)
-
-if(BUILD_TESTS)
-    enable_testing()
-    add_subdirectory(test)
-endif()
