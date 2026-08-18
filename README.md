@@ -151,7 +151,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
 ./main
-
+```
 
 Build Options
 # Enable ThreadSanitizer
